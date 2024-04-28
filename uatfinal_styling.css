@@ -1,0 +1,158 @@
+
+/* Background color */
+body{
+  background-color:seashell;
+}
+
+/* Website title heading */
+h1{
+  font-weight: bolder;
+  font-size: 32pt;
+  font-family:Arial, Helvetica, sans-serif;
+  color:#0d0d0d;
+  text-align:center;
+  letter-spacing: 2px;
+}
+
+/* My work Heading */
+h2{  
+  font-weight: bolder;
+  font-size: 24pt;
+  font-family:Arial, Helvetica, sans-serif;
+  color:#262626;
+  text-align:left;
+  letter-spacing: 1px;
+padding-left: 16px;}
+
+/* Nav Bar scetion */
+li {
+  display: inline;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+/* Paragraph section */
+p{ 
+ text-align: center;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: larger;
+ font-weight:bolder;
+ color: #111;
+ margin-left: 40px;
+ margin-right: 40px;
+}
+
+/* Images Section */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 60px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 50px;
+}
+
+/* about me image section */
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+img {
+    height: 300px
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+  }
+
+  /* Contact Section */
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
